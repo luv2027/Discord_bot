@@ -18,3 +18,8 @@ client.on("messageCreate", (message) => {
 client.login(
   "MTIwMzM0NTcwNTc3NTgwMDMyMA.GhKIlG.EKJ-CWD4hK-5Y9VLejwh38VCN0_KcoIs9GkHkY"
 );
+
+client.on("interactionCreate", (interaction) => {
+  console.log(interaction);
+  interaction.reply("Pong!");
+});
